@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saviour</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="lg:mx-md bg-dark br-8 mt-2 px-2 py-2 md:text-center">
+        <form>  
+            <input type="text" placeholder="Enter File Name"  id="fileName"><br>
+            <input type="text" name="" id="key" class="form__key" placeholder="enter key">
+            <input type="text" name="" id="value" class="form__value" placeholder="enter value"><br>    
+        </form>
+        <div class="controller">
+            <button onclick="addData()">Add Data</button>
+            <button onclick="delete_data()">Delete data</button>
+            <button onclick="generateJSON()" class="md:mt-2">Generate JSON File</button>
+            <button onclick="copy_text(javaVariables)" class="md:mt-2">Copy Java</button>
+            <button onclick="copy_text(keys)" class="md:mt-2">Copy Keys</button>
+        </div>    
+    </section>
+    <section class="lg:mx-md">
+        <h2>JSON</h2>
+        <ul id="jsonView" class="card mt-2 px-2 py-2"></ul>
+        <h2>JAVA VARAIBLES</h2>
+        <ul id="javaVariables" class="card mt-2 px-2 py-2"></ul>
+        <h2>JSON KEYS</h2>
+        <ul id="keys" class="card mt-2 px-2 py-2"></ul>    
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
